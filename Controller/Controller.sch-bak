@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -2131,14 +2130,14 @@ Wire Wire Line
 Wire Wire Line
 	10200 2450 10150 2450
 $Comp
-L Connector:TestPoint_Alt TP8
+L Connector:TestPoint_Alt TP4
 U 1 1 5EAC13B7
-P 11000 1600
-F 0 "TP8" V 11000 1950 50  0000 R CNN
-F 1 "TestPoint_Alt" H 10942 1717 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1600 50  0001 C CNN
-F 3 "~" H 11200 1600 50  0001 C CNN
-	1    11000 1600
+P 11000 1400
+F 0 "TP4" V 11000 1750 50  0000 R CNN
+F 1 "TestPoint_Alt" H 10942 1517 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1400 50  0001 C CNN
+F 3 "~" H 11200 1400 50  0001 C CNN
+	1    11000 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2233,40 +2232,8 @@ $EndComp
 Wire Wire Line
 	10200 1900 9750 1900
 Wire Wire Line
-	11050 1600 11000 1600
-Wire Wire Line
-	11050 1600 11050 2450
-$Comp
-L Connector:TestPoint_Alt TP6
-U 1 1 5EE00DB4
-P 11000 1500
-F 0 "TP6" V 11000 1850 50  0000 R CNN
-F 1 "TestPoint_Alt" H 10942 1617 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1500 50  0001 C CNN
-F 3 "~" H 11200 1500 50  0001 C CNN
-	1    11000 1500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11050 1500 11000 1500
-Wire Wire Line
-	11050 1500 11050 1600
-Connection ~ 11050 1600
-$Comp
-L Connector:TestPoint_Alt TP4
-U 1 1 5EE33DD9
-P 11000 1400
-F 0 "TP4" V 11000 1750 50  0000 R CNN
-F 1 "TestPoint_Alt" H 10942 1517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1400 50  0001 C CNN
-F 3 "~" H 11200 1400 50  0001 C CNN
-	1    11000 1400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	11050 1400 11000 1400
-Wire Wire Line
-	11050 1400 11050 1500
+Connection ~ 11050 1400
 $Comp
 L Connector:TestPoint_Alt TP2
 U 1 1 5EE4DC32
@@ -2280,26 +2247,6 @@ F 3 "~" H 11200 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11050 1300 11000 1300
-Wire Wire Line
-	11050 1300 11050 1400
-Connection ~ 11050 1500
-Connection ~ 11050 1400
-$Comp
-L Connector:TestPoint_Alt TP17
-U 1 1 5EF945D2
-P 11000 2450
-F 0 "TP17" V 11000 2800 50  0000 R CNN
-F 1 "TestPoint_Alt" H 10942 2567 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 2450 50  0001 C CNN
-F 3 "~" H 11200 2450 50  0001 C CNN
-	1    11000 2450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11000 2450 11050 2450
-Connection ~ 11050 2450
-Wire Wire Line
-	11050 2450 11050 2500
 Wire Notes Line
 	9550 2800 11250 2800
 Wire Notes Line
@@ -2889,4 +2836,8 @@ F 3 "" H 6900 7850 50  0001 C CNN
 	1    6900 7850
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	11050 1400 11050 2500
+Wire Wire Line
+	11050 1300 11050 1400
 $EndSCHEMATC
