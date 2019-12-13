@@ -3,6 +3,15 @@ int BLANK=A2;
 int SIN=A4;
 int CLK=A5;
 
+#define BLUE 1
+#define RED 2
+#define GREEN 4
+
+const uint8_t SEGMAP[2][16] = {
+  {0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0},
+  {1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1}
+};
+
 const int redA[24] = {
   0,1,0,
   0,1,0,
@@ -46,15 +55,53 @@ const int blue[24] = {
   0,0,1
 };
 
-
-
+const int mixA[24] = {
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,0,1,
+  1,0,1
+};
+const int mixB[24] = {
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1,
+  1,1,1
+};
 int cont[24] = {
   0,0,0,
   0,0,0,0,0,0,1,
-  0,0,0,0,0,0,1,
+  0,0,0,1,0,0,1,
   0,0,0,0,0,0,1,
 };
 
+
+void sendOnOffData(const uint8_t *data, uint8_t color) {
+  for(int m=0; m<2; m++) {
+    digitalWrite(SIN, LOW);
+    digitalWrite(CLK, LOW);
+    digitalWrite(CLK, HIGH);
+    digitalWrite(CLK, LOW);
+    for(int n=0; n<8; n++) {
+      digitalWrite(SIN, (color & GREEN ? data[n*m] : 0));
+      digitalWrite(CLK, HIGH);
+      digitalWrite(CLK, LOW);
+      digitalWrite(SIN, (color & RED ? data[n*m] : 0));
+      digitalWrite(CLK, HIGH);
+      digitalWrite(CLK, LOW);
+      digitalWrite(SIN, (color & BLUE ? data[n*m] : 0));
+      digitalWrite(CLK, HIGH);
+      digitalWrite(CLK, LOW);
+    }
+  }
+}
 
 void latch() {
   digitalWrite(LAT, HIGH);
@@ -96,10 +143,19 @@ void setup() {
   Serial.begin(9600);
   
   digitalWrite(BLANK, HIGH); //all outp off
+  /*
+  sendOnOff(mixB);
+  sendOnOff(mixB);
+  sendOnOff(mixA);
+  sendOnOff(mixB);
+  
   sendOnOff(redB);
   sendOnOff(redB);
   sendOnOff(redA);
   sendOnOff(redB);
+  */
+  sendOnOffData(SEGMAP[1], BLUE|RED);
+  sendOnOffData(SEGMAP[1], GREEN|RED);
   latch();
   
   sendCont();
@@ -140,6 +196,7 @@ void loop() {
   delay(1000);
   */
 
+  /*
   for(int n=0; n<=127; n++) {
     for(int m=0; m<24; m++) {
       cont[m] = 0;
@@ -165,5 +222,5 @@ void loop() {
     delay(50);
   }
   Serial.println("----------------");
-  
+  */
 }
