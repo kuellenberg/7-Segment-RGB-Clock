@@ -231,10 +231,10 @@ void initTLC5952() {
   
   digitalWrite(LAT, LOW);
   digitalWrite(BLANK, HIGH);                    // all outputs disabled
-  setLEDs(SEGMAP[4], RED|GREEN|BLUE, true);     // turn all LEDs off
-  setLEDs(SEGMAP[4], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);    // turn all LEDs off
+  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);
   latch();  
-  setBrightness(1,0,0);                         // set default brightness levels
+  setBrightness(64,0,0);                         // set default brightness levels
   digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
