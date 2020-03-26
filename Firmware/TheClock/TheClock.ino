@@ -4,7 +4,7 @@
 #define RED 2
 #define GREEN 4
 
-#define NUM_BOARDS 2      // Number of boards connected in series
+#define NUM_BOARDS 6      // Number of boards connected in series
 
 // Pin assignment
 uint8_t LAT   = A3;
@@ -176,21 +176,18 @@ void ISR1PPS() {
   
   Serial.println(String(t.hour) + ":" + String(t.min) + ":" + String(t.sec));
   _dots = !_dots;               // toggle dots
-  
-  setLEDs(SEGMAP[t.hour % 10], RED|GREEN|BLUE, _dots);
-  if (t.hour > 9) setLEDs(SEGMAP[t.hour / 10], RED|GREEN|BLUE, _dots);
-  else setLEDs(SEGMAP[10], RED|GREEN|BLUE, _dots);      // suppress leading zero
-
-  /*
-   * not there yet...
-   * 
-  setLEDs(SEGMAP[t.min % 10], RED|GREEN|BLUE, _dots);
-  setLEDs(SEGMAP[t.min / 10], RED|GREEN|BLUE, _dots);
 
   setLEDs(SEGMAP[t.sec % 10], RED|GREEN|BLUE, _dots);
   setLEDs(SEGMAP[t.sec / 10], RED|GREEN|BLUE, _dots);
-  */
+
+  setLEDs(SEGMAP[t.min % 10], RED|GREEN|BLUE, _dots);
+  setLEDs(SEGMAP[t.min / 10], RED|GREEN|BLUE, _dots);
   
+  setLEDs(SEGMAP[t.hour % 10], RED|GREEN|BLUE, _dots);
+  
+  if (t.hour > 9) setLEDs(SEGMAP[t.hour / 10], RED|GREEN|BLUE, _dots);
+  else setLEDs(SEGMAP[10], RED|GREEN|BLUE, _dots);      // suppress leading zero
+
   latch();
 }
 
@@ -234,7 +231,7 @@ void initTLC5952() {
   setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);    // turn all LEDs off
   setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);
   latch();  
-  setBrightness(64,0,0);                         // set default brightness levels
+  setBrightness(12,1,0);                         // set default brightness levels
   digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
@@ -246,9 +243,9 @@ void setup() {
   initDS3231();
 
   // Set random time..
-  t.sec = 45;
-  t.min = 59;
-  t.hour = 19;
+  t.sec = 00;
+  t.min = 32;
+  t.hour = 20;
   DS3231setTime(&t);
 }
 
@@ -257,17 +254,37 @@ void setup() {
  */
 void brightnessCycle() { 
   for(uint8_t n = 0; n < 64; n++) {
-    setBrightness(n, 0, 0);
+    setBrightness(n, 64-n, 0);
     delay(50);
   }
+  delay(500);
   for(uint8_t n = 0; n < 64; n++) {
-    setBrightness(0, n, 0);
+    setBrightness(64, 0, n);
     delay(50);
   }
+  delay(500);
   for(uint8_t n = 0; n < 64; n++) {
-    setBrightness(0, 0, n);
+    setBrightness(64, n, 64-n);
     delay(50);
   }
+  delay(500);
+  for(uint8_t n = 0; n < 64; n++) {
+    setBrightness(64-n, 64, 0);
+    delay(50);
+  }
+  delay(500);
+  
+  for(uint8_t n = 0; n < 64; n++) {
+    setBrightness(0, 64-n, n);
+    delay(50);
+  }
+  delay(500);
+  
+  for(uint8_t n = 0; n < 64; n++) {
+    setBrightness(0, n, 64-n);
+    delay(50);
+  }
+  delay(500);
 }
 
 void loop() {
