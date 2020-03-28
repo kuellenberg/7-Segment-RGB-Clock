@@ -1110,7 +1110,7 @@ U 1 1 5DCBFF35
 P 6050 4800
 F 0 "J7" H 5900 5150 50  0000 C CNN
 F 1 "CON_USB_A" H 6300 4450 50  0000 C CNN
-F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 6200 4750 50  0001 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 6200 4750 50  0001 C CNN
 F 3 " ~" H 6200 4750 50  0001 C CNN
 	1    6050 4800
 	1    0    0    -1  
@@ -1884,7 +1884,7 @@ U 1 1 5EA15311
 P 10200 2250
 F 0 "TP16" V 10200 2600 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 2367 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2250 50  0001 C CNN
 F 3 "~" H 10400 2250 50  0001 C CNN
 	1    10200 2250
 	0    1    1    0   
@@ -1895,7 +1895,7 @@ U 1 1 5EA2EDBD
 P 10200 2150
 F 0 "TP13" V 10200 2500 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 2267 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 2150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2150 50  0001 C CNN
 F 3 "~" H 10400 2150 50  0001 C CNN
 	1    10200 2150
 	0    1    1    0   
@@ -1906,7 +1906,7 @@ U 1 1 5EA2F1A5
 P 10200 2050
 F 0 "TP12" V 10200 2400 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 2167 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2050 50  0001 C CNN
 F 3 "~" H 10400 2050 50  0001 C CNN
 	1    10200 2050
 	0    1    1    0   
@@ -1934,7 +1934,7 @@ U 1 1 5EBF1B77
 P 10200 1300
 F 0 "TP1" V 10200 1650 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1417 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1300 50  0001 C CNN
 F 3 "~" H 10400 1300 50  0001 C CNN
 	1    10200 1300
 	0    1    -1   0   
@@ -1947,7 +1947,7 @@ U 1 1 5EC0C17D
 P 10200 1400
 F 0 "TP3" V 10200 1750 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1517 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1400 50  0001 C CNN
 F 3 "~" H 10400 1400 50  0001 C CNN
 	1    10200 1400
 	0    1    -1   0   
@@ -1960,7 +1960,7 @@ U 1 1 5EC25000
 P 10200 1500
 F 0 "TP5" V 10200 1850 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1617 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1500 50  0001 C CNN
 F 3 "~" H 10400 1500 50  0001 C CNN
 	1    10200 1500
 	0    1    -1   0   
@@ -1973,7 +1973,7 @@ U 1 1 5EC3E132
 P 10200 1600
 F 0 "TP7" V 10200 1950 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1717 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1600 50  0001 C CNN
 F 3 "~" H 10400 1600 50  0001 C CNN
 	1    10200 1600
 	0    1    -1   0   
@@ -1986,7 +1986,7 @@ U 1 1 5EC71932
 P 10200 1700
 F 0 "TP9" V 10200 2050 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1817 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1700 50  0001 C CNN
 F 3 "~" H 10400 1700 50  0001 C CNN
 	1    10200 1700
 	0    1    -1   0   
@@ -1999,7 +1999,7 @@ U 1 1 5EC8ADD5
 P 10200 1800
 F 0 "TP10" V 10200 2150 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 1917 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1800 50  0001 C CNN
 F 3 "~" H 10400 1800 50  0001 C CNN
 	1    10200 1800
 	0    1    -1   0   
@@ -2012,7 +2012,7 @@ U 1 1 5ECA4422
 P 10200 1900
 F 0 "TP11" V 10200 2250 50  0000 R CNN
 F 1 "TestPoint_Alt" H 10142 2017 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10400 1900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1900 50  0001 C CNN
 F 3 "~" H 10400 1900 50  0001 C CNN
 	1    10200 1900
 	0    1    -1   0   
