@@ -5,23 +5,22 @@ from PyQt5.QtSerialPort import QSerialPortInfo, QSerialPort
 import ColorPicker
 
 class PyClockSetup(QtWidgets.QDialog):
-    def __init__(self):
+    def __init__(self, parent = None):
         super(PyClockSetup, self).__init__()
     
         self.serial = QSerialPort(self)
         uic.loadUi('pyclocksetup.ui', self)
         self.show()
+        
         self.cp.colorChanged.connect(self.updateColor)
 
         self.serial = QSerialPort(self)
         self.connectButton.clicked.connect(self.serialConnect)
+        self.setClockButton.clicked.connect(self.setClock)
 
         availablePorts = QSerialPortInfo.availablePorts()
         for port in availablePorts:
             self.serialPorts.addItem(port.portName())
-            #if port.portName() == settings['serial_port']:
-            #    print(self.serial_ports.count())
-            #    self.serial_ports.setCurrentRow(self.serial_ports.count() - 1)
     
     def serialConnect(self):
         try:
@@ -32,23 +31,30 @@ class PyClockSetup(QtWidgets.QDialog):
         self.serial.setPortName(port)
         if self.serial.open(QtCore.QIODevice.WriteOnly):
             self.serial.setBaudRate(9600)
-            #self.serial.readyRead.connect(self.on_serial_read)
         else:
             QtWidgets.QMessageBox.warning(self, 'Warning', \
-                'Could not connect to {}.'.format(port))
+                'Cannot connect to {}.'.format(port))
             return
 
 
     def updateColor(self, hex):
-        (r,g,b,a) = QtGui.QColor(hex).getRgb()
-        #print(r,g,b,a)
-        rDiv = self.redDiv.value()
-        bDiv = self.blueDiv.value()
-        gDiv = self.greenDiv.value()
         self.colorLabel.setStyleSheet('QLabel {{background-color: {}; }}'.format(hex))
-        str = 'color={},{},{}\n'.format(int(r/rDiv),int(g/gDiv),int(b/bDiv))
+
+        (r,g,b,_) = QtGui.QColor(hex).getRgb() 
+        print('rgb = ',r,g,b)
+        r = r / self.redDiv.value() * self.brightness.value()
+        b = b / self.blueDiv.value() * self.brightness.value()
+        g =  g / self.greenDiv.value() * self.brightness.value()
+        
+        str = 'color={},{},{}\n'.format(int(r),int(g),int(b))
         print(str)
         self.serial.write(str.encode())
+
+    def setClock(self):
+        str = 'time=' + self.timeEdit.time().toString("hh:mm:ss")
+        print(str)
+        self.serial.write(str.encode())
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
