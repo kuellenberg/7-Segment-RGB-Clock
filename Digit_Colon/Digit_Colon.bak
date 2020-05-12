@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Digit_Colon-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -2143,10 +2143,10 @@ Wire Wire Line
 	900  4800 900  4850
 Connection ~ 900  4800
 $Comp
-L Jumper:SolderJumper_2_Open #JP1
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 6078EB46
 P 10400 7900
-F 0 "#JP1" H 10650 7950 50  0000 C CNN
+F 0 "JP1" H 10600 7950 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 10400 8014 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10400 7900 50  0001 C CNN
 F 3 "~" H 10400 7900 50  0001 C CNN
@@ -2162,10 +2162,10 @@ Wire Wire Line
 Wire Wire Line
 	9950 8000 10250 8000
 $Comp
-L Jumper:SolderJumper_2_Open #JP2
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 607935E2
 P 10400 8000
-F 0 "#JP2" H 10650 8050 50  0000 C CNN
+F 0 "JP2" H 10600 8050 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 10400 8114 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10400 8000 50  0001 C CNN
 F 3 "~" H 10400 8000 50  0001 C CNN
@@ -2175,10 +2175,10 @@ $EndComp
 Wire Wire Line
 	10550 8000 11300 8000
 $Comp
-L Jumper:SolderJumper_2_Open #JP3
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 60793832
 P 10400 8100
-F 0 "#JP3" H 10650 8150 50  0000 C CNN
+F 0 "JP3" H 10600 8150 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 10400 8214 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10400 8100 50  0001 C CNN
 F 3 "~" H 10400 8100 50  0001 C CNN
@@ -2188,10 +2188,10 @@ $EndComp
 Wire Wire Line
 	10550 8100 11300 8100
 $Comp
-L Jumper:SolderJumper_2_Open #JP4
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 60793A68
 P 10400 8200
-F 0 "#JP4" H 10650 8250 50  0000 C CNN
+F 0 "JP4" H 10600 8250 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 10400 8314 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10400 8200 50  0001 C CNN
 F 3 "~" H 10400 8200 50  0001 C CNN
@@ -2541,10 +2541,10 @@ $EndComp
 Wire Wire Line
 	10300 2950 10300 2900
 $Comp
-L Mechanical:MountingHole_Pad #H1
+L Mechanical:MountingHole_Pad H1
 U 1 1 5DFA8556
 P 7550 10500
-F 0 "#H1" H 7600 10450 50  0000 L CNN
+F 0 "H1" H 7600 10450 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7650 10458 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7550 10500 50  0001 C CNN
 F 3 "~" H 7550 10500 50  0001 C CNN
@@ -2565,10 +2565,10 @@ $EndComp
 Wire Wire Line
 	7550 10650 7550 10600
 $Comp
-L Mechanical:MountingHole_Pad #H2
+L Mechanical:MountingHole_Pad H2
 U 1 1 5E0084B0
 P 7800 10500
-F 0 "#H2" H 7850 10450 50  0000 L CNN
+F 0 "H2" H 7850 10450 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7900 10458 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7800 10500 50  0001 C CNN
 F 3 "~" H 7800 10500 50  0001 C CNN
@@ -2589,10 +2589,10 @@ $EndComp
 Wire Wire Line
 	7800 10650 7800 10600
 $Comp
-L Mechanical:MountingHole_Pad #H3
+L Mechanical:MountingHole_Pad H3
 U 1 1 5E0657AB
 P 8050 10500
-F 0 "#H3" H 8100 10450 50  0000 L CNN
+F 0 "H3" H 8100 10450 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8150 10458 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8050 10500 50  0001 C CNN
 F 3 "~" H 8050 10500 50  0001 C CNN
@@ -2613,10 +2613,10 @@ $EndComp
 Wire Wire Line
 	8050 10650 8050 10600
 $Comp
-L Mechanical:MountingHole_Pad #H4
+L Mechanical:MountingHole_Pad H4
 U 1 1 5E0C30FA
 P 8300 10500
-F 0 "#H4" H 8350 10450 50  0000 L CNN
+F 0 "H4" H 8350 10450 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8400 10458 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8300 10500 50  0001 C CNN
 F 3 "~" H 8300 10500 50  0001 C CNN
