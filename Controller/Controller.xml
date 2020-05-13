@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\User\Desktop\Projects\Clock\Controller\Controller.sch</source>
-    <date>12.05.2020 15:57:22</date>
+    <date>13.05.2020 13:53:51</date>
     <tool>Eeschema (5.1.2)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -20,10 +20,11 @@
   </design>
   <components>
     <comp ref="J1">
-      <value>DATA</value>
+      <value>Conn_02x04_Top_Bottom</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Data</field>
         <field name="Mouser">855-M20-8890845 </field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -42,10 +43,11 @@
       <tstamp>5D906C5A</tstamp>
     </comp>
     <comp ref="LD5">
-      <value>LED orange</value>
+      <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Orange</field>
         <field name="Mouser">859-LTST-C191KFKT</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
@@ -53,10 +55,11 @@
       <tstamp>5D90CB95</tstamp>
     </comp>
     <comp ref="LD6">
-      <value>LED green</value>
+      <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Green</field>
         <field name="Mouser">859-LTST-C190KGKT</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
@@ -185,11 +188,12 @@
       <tstamp>5D970487</tstamp>
     </comp>
     <comp ref="J3">
-      <value>ICSP</value>
+      <value>Conn_02x03_Top_Bottom</value>
       <footprint>Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Digikey">732-5394-ND</field>
+        <field name="Label">ICSP</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -306,10 +310,11 @@
       <tstamp>5DA34F43</tstamp>
     </comp>
     <comp ref="LD7">
-      <value>LED red</value>
+      <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Red</field>
         <field name="Mouser">859-LTST-C190KRKT</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
@@ -350,7 +355,7 @@
       <tstamp>5DCA9E78</tstamp>
     </comp>
     <comp ref="J7">
-      <value>USB</value>
+      <value>USB_A</value>
       <footprint>Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal</footprint>
       <datasheet> ~</datasheet>
       <fields>
@@ -372,10 +377,11 @@
       <tstamp>5DCE7AD1</tstamp>
     </comp>
     <comp ref="LD4">
-      <value>LED green</value>
+      <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Green</field>
         <field name="Mouser">859-LTST-C190KGKT</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
@@ -504,10 +510,11 @@
       <tstamp>5E11BEE4</tstamp>
     </comp>
     <comp ref="LD3">
-      <value>LED orange</value>
+      <value>LED</value>
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Orange</field>
         <field name="Mouser">859-LTST-C191KFKT</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
@@ -537,10 +544,11 @@
       <tstamp>5E18C3FB</tstamp>
     </comp>
     <comp ref="J4">
-      <value>DC OUT</value>
+      <value>Conn_02x04_Top_Bottom</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">DC out</field>
         <field name="Mouser">855-M20-8890845 </field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -581,11 +589,12 @@
       <tstamp>5E7929E5</tstamp>
     </comp>
     <comp ref="J6">
-      <value>5V AUX</value>
+      <value>Conn_01x02</value>
       <footprint>Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Digikey">455-2247-ND</field>
+        <field name="Label">5V aux</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -807,9 +816,6 @@
       <value>??</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
-      <fields>
-        <field name="Mouser">576-1812L050PR</field>
-      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB21CFC</tstamp>
@@ -842,11 +848,12 @@
       <tstamp>5E811341</tstamp>
     </comp>
     <comp ref="JP1">
-      <value>5V PASSTHRU</value>
+      <value>Jumper</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Digikey">S1012EC-02-ND</field>
+        <field name="Label">5V passthrough</field>
       </fields>
       <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
