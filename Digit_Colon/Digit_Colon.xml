@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\User\Desktop\Projects\Clock\Digit_Colon\Digit_Colon.sch</source>
-    <date>12.05.2020 18:56:26</date>
+    <date>13.05.2020 14:00:58</date>
     <tool>Eeschema (5.1.2)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -676,10 +676,11 @@
       <tstamp>5D708268</tstamp>
     </comp>
     <comp ref="J1">
-      <value>DC in</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">DC in</field>
         <field name="Mouser">855-M20-8890845</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -719,10 +720,11 @@
       <tstamp>5DC705EB</tstamp>
     </comp>
     <comp ref="J3">
-      <value>Signal in</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-7910842R</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Signal in</field>
         <field name="Mouser">855-M20-7910842R</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -730,10 +732,11 @@
       <tstamp>5DE88AD3</tstamp>
     </comp>
     <comp ref="J4">
-      <value>Signal out</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">Signal out</field>
         <field name="Mouser">855-M20-8890845</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -884,10 +887,11 @@
       <tstamp>5DB12E03</tstamp>
     </comp>
     <comp ref="J2">
-      <value>DC out</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-7910842R</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Label">DC out</field>
         <field name="Mouser">855-M20-7910842R</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
