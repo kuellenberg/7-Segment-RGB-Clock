@@ -228,19 +228,23 @@ void initTLC5952() {
   
   digitalWrite(LAT, LOW);
   digitalWrite(BLANK, HIGH);                    // all outputs disabled
-  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);    // turn all LEDs off
-  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);    // turn all LEDs off
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
   latch();  
-  setBrightness(4,1,1);                         // set default brightness levels
+  setBrightness(16,16,16);                         // set default brightness levels
   digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
 void setup() {
   t_time t;
   
-  Serial.begin(9600);
+  Serial.begin(115200);
   initTLC5952();
-  initDS3231();
+  //initDS3231();
 
   /*
   t.sec = 0;
