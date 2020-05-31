@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\André\Desktop\Projects\7-Segment-RGB-Clock\Digit_Colon\Digit_Colon.sch</source>
-    <date>04.10.2019 14:05:26</date>
-    <tool>Eeschema (5.1.4)-1</tool>
+    <source>C:\Users\User\Desktop\Projects\Clock\Digit_Colon\Digit_Colon.sch</source>
+    <date>13.05.2020 14:00:58</date>
+    <tool>Eeschema (5.1.2)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -22,6 +22,9 @@
     <comp ref="U1">
       <value>TLC5952</value>
       <footprint>Package_SO:HTSSOP-32-1EP_6.1x11mm_P0.65mm_EP5.2x11mm_Mask4.11x4.36mm_ThermalVias</footprint>
+      <fields>
+        <field name="Mouser">595-TLC5952DAP</field>
+      </fields>
       <libsource lib="ak" part="TLC5952" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D9B001C</tstamp>
@@ -30,6 +33,9 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DDFB996</tstamp>
@@ -38,6 +44,9 @@
       <value>TBD</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">71-CRCW08050000Z0EAC</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DE16A67</tstamp>
@@ -46,6 +55,9 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E045893</tstamp>
@@ -54,6 +66,9 @@
       <value>TBD</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">71-CRCW08050000Z0EAC</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E0458A4</tstamp>
@@ -283,113 +298,155 @@
       <tstamp>5E045860</tstamp>
     </comp>
     <comp ref="R3">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D748E11</tstamp>
     </comp>
     <comp ref="R4">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D749A2B</tstamp>
     </comp>
     <comp ref="R5">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D749F3B</tstamp>
     </comp>
     <comp ref="R6">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D74A5E4</tstamp>
     </comp>
     <comp ref="R7">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D74AB76</tstamp>
     </comp>
     <comp ref="R8">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EDBCE</tstamp>
     </comp>
     <comp ref="R9">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EE07E</tstamp>
     </comp>
     <comp ref="R10">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EE3E2</tstamp>
     </comp>
     <comp ref="R12">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EE7C3</tstamp>
     </comp>
     <comp ref="R13">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EF6A4</tstamp>
     </comp>
     <comp ref="R14">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EFA0D</tstamp>
     </comp>
     <comp ref="R15">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EFDDA</tstamp>
     </comp>
     <comp ref="R16">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7F048B</tstamp>
     </comp>
     <comp ref="R11">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7F0927</tstamp>
@@ -619,9 +676,13 @@
       <tstamp>5D708268</tstamp>
     </comp>
     <comp ref="J1">
-      <value>DC IN</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Label">DC in</field>
+        <field name="Mouser">855-M20-8890845</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DED1B6C</tstamp>
@@ -629,6 +690,9 @@
     <comp ref="U2">
       <value>TLC5952</value>
       <footprint>Package_SO:HTSSOP-32-1EP_6.1x11mm_P0.65mm_EP5.2x11mm_Mask4.11x4.36mm_ThermalVias</footprint>
+      <fields>
+        <field name="Mouser">595-TLC5952DAP</field>
+      </fields>
       <libsource lib="ak" part="TLC5952" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E045839</tstamp>
@@ -637,6 +701,9 @@
       <value>330uF</value>
       <footprint>Capacitor_SMD:C_Elec_8x10.2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">667-EEE-HA1E331UP </field>
+      </fields>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DC705E5</tstamp>
@@ -645,22 +712,33 @@
       <value>330uF</value>
       <footprint>Capacitor_SMD:C_Elec_8x10.2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">667-EEE-HA1E331UP </field>
+      </fields>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DC705EB</tstamp>
     </comp>
     <comp ref="J3">
-      <value>Signal in</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-7910842R</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Label">Signal in</field>
+        <field name="Mouser">855-M20-7910842R</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DE88AD3</tstamp>
     </comp>
     <comp ref="J4">
-      <value>Signal out</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-8890845</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Label">Signal out</field>
+        <field name="Mouser">855-M20-8890845</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E56CB75</tstamp>
@@ -669,62 +747,42 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F827DB3</tstamp>
     </comp>
     <comp ref="D60">
-      <value>5V</value>
+      <value>5V TVS</value>
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">576-AQ05C-01FTG </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD3762F</tstamp>
     </comp>
     <comp ref="D61">
-      <value>5V</value>
+      <value>5V TVS</value>
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">576-AQ05C-01FTG </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FDD45BF</tstamp>
     </comp>
-    <comp ref="JP1">
-      <value>SolderJumper_2_Open</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6078EB46</tstamp>
-    </comp>
-    <comp ref="JP2">
-      <value>SolderJumper_2_Open</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>607935E2</tstamp>
-    </comp>
-    <comp ref="JP3">
-      <value>SolderJumper_2_Open</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60793832</tstamp>
-    </comp>
-    <comp ref="JP4">
-      <value>SolderJumper_2_Open</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60793A68</tstamp>
-    </comp>
     <comp ref="D57">
-      <value>D_TVS</value>
+      <value>6V TVS</value>
       <footprint>Diode_SMD:D_SMA</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">652-SMAJ6.0CA </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A206CD</tstamp>
@@ -733,6 +791,9 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A212A6</tstamp>
@@ -741,30 +802,42 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A22521</tstamp>
     </comp>
     <comp ref="D62">
-      <value>D_TVS</value>
+      <value>6V TVS</value>
       <footprint>Diode_SMD:D_SMA</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">652-SMAJ6.0CA </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60B46D5A</tstamp>
     </comp>
     <comp ref="D59">
-      <value>5V</value>
+      <value>5V TVS</value>
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">576-AQ05C-01FTG </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FE210DF</tstamp>
     </comp>
     <comp ref="D58">
-      <value>5V</value>
+      <value>5V TVS</value>
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">576-AQ05C-01FTG </field>
+      </fields>
       <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FE210E5</tstamp>
@@ -773,6 +846,9 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A230C3</tstamp>
@@ -781,6 +857,9 @@
       <value>100n</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">810-CGA3E2X7R1H104K </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60A2276E</tstamp>
@@ -789,6 +868,9 @@
       <value>330uF</value>
       <footprint>Capacitor_SMD:C_Elec_8x10.2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">667-EEE-HA1E331UP </field>
+      </fields>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB113A0</tstamp>
@@ -797,14 +879,21 @@
       <value>330uF</value>
       <footprint>Capacitor_SMD:C_Elec_8x10.2</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">667-EEE-HA1E331UP </field>
+      </fields>
       <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB12E03</tstamp>
     </comp>
     <comp ref="J2">
-      <value>DC OUT</value>
+      <value>Conn_02x04_Odd_Even</value>
       <footprint>ak:HARWIN_M20-7910842R</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Label">DC out</field>
+        <field name="Mouser">855-M20-7910842R</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EBFCED6</tstamp>
@@ -813,6 +902,9 @@
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">81-GRM21BR71A106KA3K</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB38982</tstamp>
@@ -821,41 +913,12 @@
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">81-GRM21BR71A106KA3K</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DBF2E89</tstamp>
-    </comp>
-    <comp ref="H1">
-      <value>MountingHole_Pad</value>
-      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DFA8556</tstamp>
-    </comp>
-    <comp ref="H2">
-      <value>MountingHole_Pad</value>
-      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E0084B0</tstamp>
-    </comp>
-    <comp ref="H3">
-      <value>MountingHole_Pad</value>
-      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E0657AB</tstamp>
-    </comp>
-    <comp ref="H4">
-      <value>MountingHole_Pad</value>
-      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E0C30FA</tstamp>
     </comp>
     <comp ref="D70">
       <value>LED_RGB</value>
@@ -922,17 +985,23 @@
       <tstamp>5D9E71FA</tstamp>
     </comp>
     <comp ref="R18">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D9E7200</tstamp>
     </comp>
     <comp ref="R17">
-      <value>TBD</value>
+      <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser">603-RT0805DRE071K58L</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D9E7206</tstamp>
@@ -941,6 +1010,9 @@
       <value>74LS244</value>
       <footprint>Package_SO:SO-20_12.8x7.5mm_P1.27mm</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS244</datasheet>
+      <fields>
+        <field name="Mouser">595-SN74LS244DWR</field>
+      </fields>
       <libsource lib="74xx" part="74LS244" description="8-bit Bus Buffer 3-State outputs"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DDF90AB</tstamp>
@@ -1088,35 +1160,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Jumper" part="SolderJumper_2_Open">
-      <description>Solder Jumper, 2-pole, open</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>SolderJumper*Open*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">SolderJumper_2_Open</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="B" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Mechanical" part="MountingHole_Pad">
-      <description>Mounting Hole with connection</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>MountingHole*Pad*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">H</field>
-        <field name="Value">MountingHole_Pad</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-      </pins>
-    </libpart>
     <libpart lib="ak" part="LED_BGR">
       <description>RGB LED, 6 pin package</description>
       <docs>~</docs>
@@ -1182,22 +1225,16 @@
   </libparts>
   <libraries>
     <library logical="74xx">
-      <uri>C:\Users\André\Desktop\Portable\KiCad\App\KiCad\share\kicad\library/74xx.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/74xx.lib</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>C:\Users\André\Desktop\Portable\KiCad\App\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Users\André\Desktop\Portable\KiCad\App\KiCad\share\kicad\library/Device.lib</uri>
-    </library>
-    <library logical="Jumper">
-      <uri>C:\Users\André\Desktop\Portable\KiCad\App\KiCad\share\kicad\library/Jumper.lib</uri>
-    </library>
-    <library logical="Mechanical">
-      <uri>C:\Users\André\Desktop\Portable\KiCad\App\KiCad\share\kicad\library/Mechanical.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
     </library>
     <library logical="ak">
-      <uri>C:/Users/André/Desktop/Projects/Kicad-Libraries/ak.lib</uri>
+      <uri>C:\Users\User\Desktop\Projects\Kicad-Libraries/ak.lib</uri>
     </library>
   </libraries>
   <nets>
@@ -1228,9 +1265,6 @@
       <node ref="U3" pin="4"/>
       <node ref="U3" pin="19"/>
       <node ref="U1" pin="33"/>
-      <node ref="H2" pin="1"/>
-      <node ref="H4" pin="1"/>
-      <node ref="H3" pin="1"/>
       <node ref="C2" pin="2"/>
       <node ref="U1" pin="1"/>
       <node ref="R2" pin="2"/>
@@ -1240,7 +1274,6 @@
       <node ref="J1" pin="6"/>
       <node ref="C7" pin="2"/>
       <node ref="U2" pin="1"/>
-      <node ref="H1" pin="1"/>
       <node ref="C13" pin="2"/>
       <node ref="C12" pin="2"/>
       <node ref="C6" pin="2"/>
@@ -1282,16 +1315,13 @@
       <node ref="J3" pin="2"/>
     </net>
     <net code="8" name="Net-(J4-Pad8)">
-      <node ref="JP4" pin="2"/>
       <node ref="J4" pin="8"/>
     </net>
     <net code="9" name="Net-(J4-Pad6)">
       <node ref="J4" pin="6"/>
-      <node ref="JP3" pin="2"/>
     </net>
     <net code="10" name="Net-(J4-Pad4)">
       <node ref="J4" pin="4"/>
-      <node ref="JP2" pin="2"/>
     </net>
     <net code="11" name="Net-(D42-Pad5)">
       <node ref="D42" pin="5"/>
@@ -1664,7 +1694,6 @@
     </net>
     <net code="100" name="Net-(J4-Pad2)">
       <node ref="J4" pin="2"/>
-      <node ref="JP1" pin="2"/>
     </net>
     <net code="101" name="+15V">
       <node ref="D24" pin="5"/>
@@ -2027,20 +2056,17 @@
     </net>
     <net code="177" name="/SOUT">
       <node ref="U2" pin="30"/>
-      <node ref="JP1" pin="1"/>
     </net>
     <net code="178" name="/SOUT_TO_SIN">
       <node ref="U2" pin="2"/>
       <node ref="U1" pin="30"/>
     </net>
     <net code="179" name="/LAT">
-      <node ref="JP3" pin="1"/>
       <node ref="U2" pin="4"/>
       <node ref="U1" pin="4"/>
       <node ref="U3" pin="5"/>
     </net>
     <net code="180" name="/BLANK">
-      <node ref="JP4" pin="1"/>
       <node ref="U2" pin="29"/>
       <node ref="U1" pin="29"/>
       <node ref="U3" pin="3"/>
@@ -2084,7 +2110,6 @@
     <net code="190" name="/SCLK">
       <node ref="U1" pin="3"/>
       <node ref="U2" pin="3"/>
-      <node ref="JP2" pin="1"/>
       <node ref="U3" pin="7"/>
     </net>
     <net code="191" name="Net-(D39-Pad4)">
