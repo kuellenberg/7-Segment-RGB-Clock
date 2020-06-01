@@ -241,7 +241,11 @@ void initTLC5952() {
   setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
   setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
   latch();  
+<<<<<<< HEAD
   setBrightness(8,8,8);                         // set default brightness levels
+=======
+  setBrightness(16,16,16);                         // set default brightness levels
+>>>>>>> f231e91f062c40a984469f4891fe67a9ca14628a
   digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
@@ -250,9 +254,14 @@ void setup() {
   
   Serial.begin(115200);
   initTLC5952();
+<<<<<<< HEAD
   delay(500);
   initDS3231();
   
+=======
+  //initDS3231();
+
+>>>>>>> f231e91f062c40a984469f4891fe67a9ca14628a
   /*
   t.sec = 0;
   t.min = 0;
