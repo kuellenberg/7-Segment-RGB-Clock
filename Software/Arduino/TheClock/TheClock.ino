@@ -16,6 +16,9 @@ uint8_t I2C_SDA = 4;
 uint8_t I2C_SCL = 3;
 
 bool _dots;
+bool g_blinkingDots = 0;
+bool g_leadingZero = 1;
+bool g_testMode = 0;
 
 typedef struct time {
   uint8_t hour;
@@ -175,7 +178,10 @@ void ISR1PPS() {
   DS3231getTime(&t);
   
   Serial.println(String(t.hour) + ":" + String(t.min) + ":" + String(t.sec));
-  _dots = !_dots;               // toggle dots
+  if (g_blinkingDots)
+    _dots = !_dots;               // toggle dots
+  else
+    _dots = true;
 
   setLEDs(SEGMAP[t.sec % 10], RED|GREEN|BLUE, _dots);
   setLEDs(SEGMAP[t.sec / 10], RED|GREEN|BLUE, _dots);
@@ -185,7 +191,7 @@ void ISR1PPS() {
   
   setLEDs(SEGMAP[t.hour % 10], RED|GREEN|BLUE, _dots);
   
-  if (t.hour > 9) setLEDs(SEGMAP[t.hour / 10], RED|GREEN|BLUE, _dots);
+  if (t.hour > 9 || g_leadingZero) setLEDs(SEGMAP[t.hour / 10], RED|GREEN|BLUE, _dots);
   else setLEDs(SEGMAP[10], RED|GREEN|BLUE, _dots);      // suppress leading zero
 
   latch();
@@ -228,26 +234,44 @@ void initTLC5952() {
   
   digitalWrite(LAT, LOW);
   digitalWrite(BLANK, HIGH);                    // all outputs disabled
-  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);    // turn all LEDs off
-  setLEDs(SEGMAP[10], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);    // turn all LEDs off
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
   latch();  
-  setBrightness(4,1,1);                         // set default brightness levels
+  setBrightness(8,8,8);                         // set default brightness levels
   digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
 void setup() {
   t_time t;
   
-  Serial.begin(9600);
+  Serial.begin(115200);
   initTLC5952();
+  delay(500);
   initDS3231();
-
+  
   /*
   t.sec = 0;
   t.min = 0;
   t.hour = 0;
   DS3231setTime(&t);
   */
+}
+
+void testMode() {
+  digitalWrite(LAT, LOW);
+  digitalWrite(BLANK, HIGH);                   // all outputs disabled
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);    // turn all segmens on
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  setLEDs(SEGMAP[8], RED|GREEN|BLUE, true);
+  latch();
+  digitalWrite(BLANK, LOW);                     // all outputs enabled
 }
 
 /*
@@ -307,6 +331,20 @@ void loop() {
       g = Serial.parseInt();
       b = Serial.parseInt();
       setBrightness(r,g,b);
+    }
+    if (str.startsWith("blink")) {
+      g_blinkingDots = Serial.parseInt();
+    }
+    if (str.startsWith("zero")) {
+      g_leadingZero = Serial.parseInt();
+    }
+    if (str.startsWith("test")) {
+      if (Serial.parseInt() == 1) {
+        detachInterrupt(digitalPinToInterrupt(2));
+        testMode();
+      } else {
+        attachInterrupt(digitalPinToInterrupt(2), ISR1PPS, RISING);
+      }
     }
     str = Serial.readStringUntil('\n');
   }
