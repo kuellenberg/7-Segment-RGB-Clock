@@ -20,7 +20,7 @@ U 1 1 5ECD1915
 P 1150 1900
 F 0 "F1" V 953 1900 50  0000 C CNN
 F 1 "Fuse" V 1044 1900 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-6.3x32mm_Schurter_0031-8002_Horizontal_Open" V 1080 1900 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 1080 1900 50  0001 C CNN
 F 3 "~" H 1150 1900 50  0001 C CNN
 	1    1150 1900
 	0    1    1    0   
@@ -467,7 +467,7 @@ $EndComp
 Wire Wire Line
 	6750 4550 6750 4650
 Wire Wire Line
-	7150 3950 7550 3950
+	7150 3950 7350 3950
 Connection ~ 7150 3950
 Wire Wire Line
 	7150 4050 7150 3950
@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 4200 6200 3950
 Wire Wire Line
-	6450 3950 6200 3950
+	6450 3950 6350 3950
 $Comp
 L Regulator_Linear:LM1084-ADJ U2
 U 1 1 5EDA32DD
@@ -598,7 +598,7 @@ U 1 1 5EDDBED7
 P 10550 3350
 F 0 "J10" H 10630 3342 50  0000 L CNN
 F 1 "Conn_01x04" H 10630 3251 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 10550 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10550 3350 50  0001 C CNN
 F 3 "~" H 10550 3350 50  0001 C CNN
 	1    10550 3350
 	1    0    0    -1  
@@ -868,4 +868,10 @@ F 5 "UPW1V100MDD " H 7550 4300 50  0001 C CNN "Manufacturer"
 	1    7550 4300
 	1    0    0    -1  
 $EndComp
+Connection ~ 7350 3950
+Wire Wire Line
+	7350 3950 7550 3950
+Connection ~ 6350 3950
+Wire Wire Line
+	6350 3950 6200 3950
 $EndSCHEMATC
