@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Power supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -513,7 +514,7 @@ $EndComp
 Wire Wire Line
 	1600 1750 1250 1750
 Wire Wire Line
-	1250 1050 2400 1050
+	1250 1050 1600 1050
 Wire Wire Line
 	1250 1750 1250 2750
 Wire Wire Line
@@ -585,7 +586,7 @@ F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 2550 3
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Timer:NE555P U3
+L Power-supply-rescue:NE555P-Timer U3
 U 1 1 5F239591
 P 3850 4150
 F 0 "U3" H 4150 4500 50  0000 C CNN
@@ -1034,4 +1035,28 @@ Wire Wire Line
 Connection ~ 7200 3950
 Wire Wire Line
 	7200 3950 7050 3950
+$Comp
+L Device:Fuse F1
+U 1 1 5F1B93A2
+P 1750 1050
+F 0 "F1" V 1553 1050 50  0000 C CNN
+F 1 "3A" V 1644 1050 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 1680 1050 50  0001 C CNN
+F 3 "~" H 1750 1050 50  0001 C CNN
+	1    1750 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1050 2400 1050
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5F1BA977
+P 7000 6350
+F 0 "HS1" H 7142 6471 50  0000 L CNN
+F 1 "Heatsink" H 7142 6380 50  0000 L CNN
+F 2 "ak:HS-160x50" H 7012 6350 50  0001 C CNN
+F 3 "~" H 7012 6350 50  0001 C CNN
+	1    7000 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
