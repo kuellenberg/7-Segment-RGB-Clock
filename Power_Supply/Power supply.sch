@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Power supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -701,13 +702,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 5F1FC0C9
-P 1300 2250
-F 0 "J1" H 1300 2450 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1400 1950 50  0000 C CNN
-F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00003_1x04_P5.00mm_Horizontal" H 1300 2250 50  0001 C CNN
-F 3 "~" H 1300 2250 50  0001 C CNN
-	1    1300 2250
-	-1   0    0    -1  
+P 1300 2350
+F 0 "J1" H 1300 2550 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1400 2050 50  0000 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00003_1x04_P5.00mm_Horizontal" H 1300 2350 50  0001 C CNN
+F 3 "~" H 1300 2350 50  0001 C CNN
+	1    1300 2350
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1500 2150 1650 2150
