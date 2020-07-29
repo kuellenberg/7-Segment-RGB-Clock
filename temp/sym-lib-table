@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Fancy-7-Segment-LED-Clock-rescue)(type Legacy)(uri ${KIPRJMOD}/Fancy-7-Segment-LED-Clock-rescue.lib)(options "")(descr ""))
-)
