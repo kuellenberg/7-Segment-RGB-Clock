@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Power supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -211,7 +212,7 @@ L Device:R_Small R3
 U 1 1 5F3448F3
 P 4000 4100
 F 0 "R3" H 4059 4146 50  0000 L CNN
-F 1 "100k" H 4059 4055 50  0000 L CNN
+F 1 "330k" H 4059 4055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4000 4100 50  0001 C CNN
 F 3 "~" H 4000 4100 50  0001 C CNN
 	1    4000 4100
@@ -1264,4 +1265,6 @@ F 3 "~" H 7650 4550 50  0001 C CNN
 $EndComp
 Text Notes 6950 5950 0    50   ~ 0
 Notes:\n- LD1, LD2 necessary to meet minimum load requirement of U1 and U2.\n- Thyristor crowbar is triggered at approx. 12.7V and 5,4V respectively. \n- U3 switches K1 after approx. 3s.
+Text Notes 1400 5550 0    118  ~ 24
+FUCK UP: Circuit starts with relais energized.\nFix: Replace Q1 with PNP 
 $EndSCHEMATC

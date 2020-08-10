@@ -1,0 +1,21 @@
+Circuit: * C:\Users\Ondre\Dropbox\Kicad-Projects\7-Segment-RGB-Clock\Power_Supply\ltspice\555.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Aug 09 23:46:41 2020
+Total elapsed time: 0.090 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8208
+traniter = 8200
+tranpoints = 2892
+accept = 2519
+rejected = 373
+matrix size = 18
+fillins = 0
+solver = Normal
+Matrix Compiler1: 672 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

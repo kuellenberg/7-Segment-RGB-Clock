@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Power supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -766,11 +765,11 @@ F 3 "" H 4150 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_SCR_KAG D4
+L Device:Q_SCR_KAG Q2
 U 1 1 5ED58F94
 P 10100 2350
-F 0 "D4" H 10188 2396 50  0000 L CNN
-F 1 "Q_SCR_KAG" H 10188 2305 50  0000 L CNN
+F 0 "Q2" H 10188 2396 50  0000 L CNN
+F 1 "MCR72" H 10188 2305 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" V 10100 2350 50  0001 C CNN
 F 3 "~" V 10100 2350 50  0001 C CNN
 F 4 "MCR72-6G" H 10100 2350 50  0001 C CNN "Manufacturer"
@@ -844,8 +843,8 @@ L Device:Fuse F1
 U 1 1 5F1B93A2
 P 2250 1700
 F 0 "F1" V 2150 1700 50  0000 C CNN
-F 1 "3A" V 2350 1700 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 2180 1700 50  0001 C CNN
+F 1 "6A" V 2350 1700 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-6.3x32mm_Schurter_0031-8002_Horizontal_Open" V 2180 1700 50  0001 C CNN
 F 3 "~" H 2250 1700 50  0001 C CNN
 	1    2250 1700
 	0    1    1    0   
@@ -901,7 +900,7 @@ L Device:D_Zener D8
 U 1 1 5EDA32B2
 P 8500 4600
 F 0 "D8" V 8454 4679 50  0000 L CNN
-F 1 "5V" V 8545 4679 50  0000 L CNN
+F 1 "4V7" V 8545 4679 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 8500 4600 50  0001 C CNN
 F 3 "~" H 8500 4600 50  0001 C CNN
 	1    8500 4600
@@ -1126,7 +1125,7 @@ L Device:R_Small R8
 U 1 1 5F20CC00
 P 8700 4200
 F 0 "R8" H 8759 4246 50  0000 L CNN
-F 1 "680R" H 8759 4155 50  0000 L CNN
+F 1 "560R" H 8759 4155 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8700 4200 50  0001 C CNN
 F 3 "~" H 8700 4200 50  0001 C CNN
 	1    8700 4200
@@ -1137,7 +1136,7 @@ L Device:R_Small R9
 U 1 1 5F20D144
 P 9050 4200
 F 0 "R9" H 9109 4246 50  0000 L CNN
-F 1 "220R" H 9109 4155 50  0000 L CNN
+F 1 "180R" H 9109 4155 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9050 4200 50  0001 C CNN
 F 3 "~" H 9050 4200 50  0001 C CNN
 	1    9050 4200
@@ -1263,4 +1262,6 @@ F 3 "~" H 7650 4550 50  0001 C CNN
 	1    7650 4550
 	1    0    0    -1  
 $EndComp
+Text Notes 6950 5950 0    50   ~ 0
+Notes:\n- LD1, LD2 necessary to meet minimum load requirement of U1 and U2.\n- Thyristor crowbar is triggered at approx. 12.7V and 5,4V respectively. \n- U3 switches K1 after approx. 3s.
 $EndSCHEMATC
