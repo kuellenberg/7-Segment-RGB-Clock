@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Power supply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -257,7 +256,7 @@ L Device:R_Small R4
 U 1 1 5F37A9D0
 P 5750 4100
 F 0 "R4" H 5809 4146 50  0000 L CNN
-F 1 "100k" H 5809 4055 50  0000 L CNN
+F 1 "470k" H 5809 4055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5750 4100 50  0001 C CNN
 F 3 "~" H 5750 4100 50  0001 C CNN
 	1    5750 4100
@@ -556,8 +555,8 @@ Connection ~ 2950 3900
 Connection ~ 4000 3900
 Wire Wire Line
 	2950 3900 3750 3900
-Text Notes 4100 1750 0    50   ~ 0
-Heatsink shared between D2, U1 and U2
+Text Notes 4100 1850 0    50   ~ 0
+Heatsink shared between D2, U1 and U2. \nU1 or U2 needs to be isolated!
 Connection ~ 2900 2400
 Wire Wire Line
 	2900 2400 2900 2350
@@ -1010,7 +1009,7 @@ L Connector_Generic:Conn_01x04 J2
 U 1 1 5EDDBED7
 P 9600 3550
 F 0 "J2" H 9550 3250 50  0000 L CNN
-F 1 "Conn_01x04" H 9350 3750 50  0000 L CNN
+F 1 "Conn_01x04" H 9350 3750 50  0001 L CNN
 F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 9600 3550 50  0001 C CNN
 F 3 "~" H 9600 3550 50  0001 C CNN
 	1    9600 3550
@@ -1263,8 +1262,8 @@ F 3 "~" H 7650 4550 50  0001 C CNN
 	1    7650 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 6950 5950 0    50   ~ 0
-Notes:\n- LD1, LD2 necessary to meet minimum load requirement of U1 and U2.\n- Thyristor crowbar is triggered at approx. 12.7V and 5,4V respectively. \n- U3 switches K1 after approx. 3s.
-Text Notes 1400 5550 0    118  ~ 24
-FUCK UP: Circuit starts with relais energized.\nFix: Replace Q1 with PNP 
+Text Notes 6550 6200 0    79   ~ 0
+Notes:\n- LD1, LD2 necessary to meet minimum load requirement of U1 and U2.\n- Thyristor crowbar is triggered at approx. 12.7V and 5,4V respectively. \n- U3 switches K1 after approx. 5s.
+Text Notes 1250 5700 0    118  ~ 24
+Fuck-ups: \n-Circuit starts with relais energized. Fix: Replace Q1 with PNP \n-Pads for NTC too small\n
 $EndSCHEMATC
