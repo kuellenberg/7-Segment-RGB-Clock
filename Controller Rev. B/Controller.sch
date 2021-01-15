@@ -2981,10 +2981,10 @@ F 5 "5V passthrough" H 3900 2750 50  0000 C CNN "Label"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP16
+L Connector:TestPoint_Alt TP16
 U 1 1 5EA15311
 P 10200 2250
-F 0 "#TP16" V 10200 2650 50  0000 R CNN
+F 0 "TP16" V 10200 2650 50  0000 R CNN
 F 1 "+15V" H 10142 2367 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2250 50  0001 C CNN
 F 3 "~" H 10400 2250 50  0001 C CNN
@@ -2992,10 +2992,10 @@ F 3 "~" H 10400 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP13
+L Connector:TestPoint_Alt TP13
 U 1 1 5EA2EDBD
 P 10200 2150
-F 0 "#TP13" V 10200 2550 50  0000 R CNN
+F 0 "TP13" V 10200 2550 50  0000 R CNN
 F 1 "VBUS" H 10142 2267 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2150 50  0001 C CNN
 F 3 "~" H 10400 2150 50  0001 C CNN
@@ -3003,10 +3003,10 @@ F 3 "~" H 10400 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP12
+L Connector:TestPoint_Alt TP12
 U 1 1 5EA2F1A5
 P 10200 2050
-F 0 "#TP12" V 10200 2450 50  0000 R CNN
+F 0 "TP12" V 10200 2450 50  0000 R CNN
 F 1 "+BATT" H 10142 2167 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 2050 50  0001 C CNN
 F 3 "~" H 10400 2050 50  0001 C CNN
@@ -3014,10 +3014,10 @@ F 3 "~" H 10400 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP11
+L Connector:TestPoint_Alt TP11
 U 1 1 5ECA4422
 P 10200 1900
-F 0 "#TP11" V 10200 2300 50  0000 R CNN
+F 0 "TP11" V 10200 2300 50  0000 R CNN
 F 1 "TLC_BLANK" H 10142 2017 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1900 50  0001 C CNN
 F 3 "~" H 10400 1900 50  0001 C CNN
@@ -3025,10 +3025,10 @@ F 3 "~" H 10400 1900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP10
+L Connector:TestPoint_Alt TP10
 U 1 1 5EC8ADD5
 P 10200 1800
-F 0 "#TP10" V 10200 2200 50  0000 R CNN
+F 0 "TP10" V 10200 2200 50  0000 R CNN
 F 1 "TLC_LAT" H 10142 1917 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1800 50  0001 C CNN
 F 3 "~" H 10400 1800 50  0001 C CNN
@@ -3036,10 +3036,10 @@ F 3 "~" H 10400 1800 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP9
+L Connector:TestPoint_Alt TP9
 U 1 1 5EC71932
 P 10200 1700
-F 0 "#TP9" V 10200 2050 50  0000 R CNN
+F 0 "TP9" V 10200 2050 50  0000 R CNN
 F 1 "TLC_SCL" H 10142 1817 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1700 50  0001 C CNN
 F 3 "~" H 10400 1700 50  0001 C CNN
@@ -3047,10 +3047,10 @@ F 3 "~" H 10400 1700 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP7
+L Connector:TestPoint_Alt TP7
 U 1 1 5EC3E132
 P 10200 1600
-F 0 "#TP7" V 10200 1950 50  0000 R CNN
+F 0 "TP7" V 10200 1950 50  0000 R CNN
 F 1 "TLC_SDA" H 10142 1717 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1600 50  0001 C CNN
 F 3 "~" H 10400 1600 50  0001 C CNN
@@ -3058,10 +3058,10 @@ F 3 "~" H 10400 1600 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP5
+L Connector:TestPoint_Alt TP5
 U 1 1 5EC25000
 P 10200 1500
-F 0 "#TP5" V 10200 1850 50  0000 R CNN
+F 0 "TP5" V 10200 1850 50  0000 R CNN
 F 1 "PD_OUT" H 10142 1617 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1500 50  0001 C CNN
 F 3 "~" H 10400 1500 50  0001 C CNN
@@ -3069,10 +3069,10 @@ F 3 "~" H 10400 1500 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP3
+L Connector:TestPoint_Alt TP3
 U 1 1 5EC0C17D
 P 10200 1400
-F 0 "#TP3" V 10200 1750 50  0000 R CNN
+F 0 "TP3" V 10200 1750 50  0000 R CNN
 F 1 "RTC_32K" H 10142 1517 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1400 50  0001 C CNN
 F 3 "~" H 10400 1400 50  0001 C CNN
@@ -3080,10 +3080,10 @@ F 3 "~" H 10400 1400 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP2
+L Connector:TestPoint_Alt TP2
 U 1 1 5EE4DC32
 P 11000 1300
-F 0 "#TP2" V 11000 1650 50  0000 R CNN
+F 0 "TP2" V 11000 1650 50  0000 R CNN
 F 1 "GND" H 10942 1417 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1300 50  0001 C CNN
 F 3 "~" H 11200 1300 50  0001 C CNN
@@ -3091,10 +3091,10 @@ F 3 "~" H 11200 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP4
+L Connector:TestPoint_Alt TP4
 U 1 1 5EAC13B7
 P 11000 1400
-F 0 "#TP4" V 11000 1750 50  0000 R CNN
+F 0 "TP4" V 11000 1750 50  0000 R CNN
 F 1 "GND" H 10942 1517 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 11200 1400 50  0001 C CNN
 F 3 "~" H 11200 1400 50  0001 C CNN
@@ -3142,10 +3142,10 @@ F 6 "692-1051" H 2900 1450 50  0001 C CNN "RS"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint_Alt #TP1
+L Connector:TestPoint_Alt TP1
 U 1 1 5EBF1B77
 P 10200 1300
-F 0 "#TP1" V 10200 1650 50  0000 R CNN
+F 0 "TP1" V 10200 1650 50  0000 R CNN
 F 1 "RTC_1PPS" H 10142 1417 50  0001 R CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10400 1300 50  0001 C CNN
 F 3 "~" H 10400 1300 50  0001 C CNN
