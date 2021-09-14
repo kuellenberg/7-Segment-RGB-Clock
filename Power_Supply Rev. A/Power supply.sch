@@ -1265,5 +1265,5 @@ $EndComp
 Text Notes 6550 6200 0    79   ~ 0
 Notes:\n- LD1, LD2 necessary to meet minimum load requirement of U1 and U2.\n- Thyristor crowbar is triggered at approx. 12.7V and 5,4V respectively. \n- U3 switches K1 after approx. 5s.
 Text Notes 1250 5700 0    118  ~ 24
-Fuck-ups: \n-Circuit starts with relais energized. Fix: Replace Q1 with PNP \n-Pads for NTC too small\n
+Fuck-ups: \n-Circuit starts with relais energized. Fix: Replace Q1 with PNP \n-Pads for NTC too small\n-Pull-down at thyristor gate?
 $EndSCHEMATC
